@@ -1,0 +1,109 @@
+[
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "accessPrice",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint96"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_nextOwner",
+				"type": "address"
+			}
+		],
+		"name": "inviteNewOwner",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_nextBeneficiary",
+				"type": "address"
+			}
+		],
+		"name": "inviteNewBeneficiary",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "acceptBeneficiaryInvite",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_accessPrice",
+				"type": "uint96"
+			}
+		],
+		"name": "changePrice",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "acceptOwnershipInvite",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"name": "_beneficiary",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "fallback"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "_payee",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "_timestamp",
+				"type": "uint256"
+			}
+		],
+		"name": "PaidForAccess",
+		"type": "event"
+	}
+]
